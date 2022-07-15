@@ -1,0 +1,137 @@
+/*global*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.title{
+    font-family: Inter, sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 35px;
+    font-weight: 700;
+}
+.title span{
+    color: hsl(277, 64%, 61%);
+}
+
+.text{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.5em;
+}
+.skill--title{
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+}
+
+.skill--text{
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+ /*end global*/
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 5px;
+    height: 70%;
+    width: 80%;
+    display: flex;
+    overflow: hidden;
+}
+
+.card--content{
+    width: calc(50% - 100px);
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card--img{
+    width: 50%;
+    background-image: url("../images/image-header-desktop.jpg");
+   }
+.color{
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 76%, 29%, 0.6);
+}
+
+
+.card--text h1{
+    margin-bottom: 40px;
+}
+
+.card--skill{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+@media screen and (max-width: 375px) {
+    .title {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .container{
+        height: 750px;
+    }
+    .card {
+        height: 90%;
+        width: 80%;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .card--img {
+        background-image: url("../images/image-header-mobile.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 30%;
+    }
+
+    .card--content {
+        width: calc(100% - 80px);
+        margin: 40px 40px;
+        text-align: center;
+    }
+
+    .card--text h1 {
+        margin-bottom: 14px;
+    }
+
+    .card--text p {
+        margin-bottom: 40px;
+    }
+
+    .card--skill {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .skill--title{
+        margin-bottom: 5px;
+    }
+}
