@@ -28,7 +28,7 @@
     font-family: Inter, sans-serif;
     font-weight: 700;
     color: hsl(0, 0%, 100%);
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .skill--text{
@@ -50,15 +50,15 @@
 .card{
     background-color: hsl(244, 38%, 16%);
     border-radius: 5px;
-    height: 70%;
-    width: 80%;
+    height: 50%;
+    width: 70%;
     display: flex;
     overflow: hidden;
 }
 
 .card--content{
-    width: calc(50% - 100px);
-    margin: 50px;
+    width: calc(50% - 140px);
+    margin: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -66,14 +66,15 @@
 .card--img{
     width: 50%;
     background-image: url("../images/image-header-desktop.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
-   }
+}
+
 .color{
     width: 100%;
     height: 100%;
     background-color: hsla(277, 76%, 29%, 0.6);
 }
-
 
 .card--text h1{
     margin-bottom: 40px;
@@ -85,7 +86,7 @@
     color: white;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
     .title {
         font-size: 22px;
     }
